@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            position: relative;
+        }
+        .link {
+            position: absolute;
+            width: 10rem;
+            height: 10rem;
+            background-color: black;
+            color: white;
+            text-align: center;
+            /* 박스에서 수직방향 정렬 */
+            line-height: 10rem;
+            /* 박스의 테두리 라운딩 */
+            border-radius: 50%;
+            /* 텍스트 밑줄 제거 */
+            text-decoration: none;
+        }
+        .link-position {
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="images/bespoke.png" alt="#" class="img">
+        <a href="#" class="link link-position">비교하기</a>
+    </div>
+</body>
+</html>
