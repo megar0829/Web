@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            border: 1px solid black;
+            box-sizing: border-box;
+            flex-direction: column;
+            width: 60%;
+        }
+        .img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .text-box {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .text-left {
+            text-align: left;
+            flex-grow: 1;
+        }
+        .text-right {
+            text-align: right;
+            flex-grow: 1;
+        }
+        .lst {
+            display: flex;
+            flex-direction: row;
+        }
+        .head {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .top-padding {
+            padding-top: 2%;
+        }
+        .middle-margin {
+            margin: 0% 3%;
+        }
+        .flag {
+            position: absolute;
+            width: 20%;
+            right: 0;
+        }
+        .top {
+            width: 100%;
+            height: 100%;
+            flex-grow: 1;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <img class="img" src="05_Flex_Advanced/01.jpg" alt="버너스리">
+            <img class="flag" src="05_Flex_Advanced/02.png" alt="flag">
+        </div>        
+        <div class="textbox">
+            <div class="head middle-margin">
+                <h2 class="text-left">팀 버너스리</h2>
+                <h3 class="text-right top-padding">프로그래머</h3>  
+            </div>
+            <p class="middle-margin">1989년 월드 와이드 웹의 하이퍼텍스트 시스템을 고안하여 개발. 웹의 아버지</p>
+            <div class="lst middle-margin">
+                <div class="text-left">
+                    <p>국적</p>
+                    <p>생년월일</p>
+                    <p>직업</p>
+                    <p>출신 대학</p>
+                    <p>추가 정보</p>
+                </div>
+                <div class="text-right">
+                    <p>영국</p>
+                    <p>1955년 6월 8일</p>
+                    <p>전산과학자, 프로그래머, 교수</p>
+                    <p>옥스퍼드 대학교 물리학 박사</p>
+                    <p><a href="https://ko.wikipedia.org/wiki/%ED%8C%80_%EB%B2%84%EB%84%88%EC%8A%A4%EB%A6%AC">https://ko.wikipedia.org/wiki/팀_버너스리</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
